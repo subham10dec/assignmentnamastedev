@@ -27,6 +27,10 @@ Q5. What is cross-origin in script tag ?
 The crossorigin attribute provides support for CORS , defining how the element handles cross-origin requests. CORS stands for Cross-Origin Resource Sharing. If cross-origin is set to "user-credential", then user authentication is required to access the file.
 The purpose of crossorigin attribute is used to share the resources from one domain to another domain.It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
 
+Syntax:
+
+<script crossorigin="anonymous|use-credentials">
+
 6. What is difference between React and ReactDOM?
    React library contains functionality utilised in web and mobile apps (react native). ReactDOM library contains functionality utilised in web browser. ReactDOM contains DOM manipulation utilities.
 
