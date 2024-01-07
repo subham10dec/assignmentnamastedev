@@ -17,6 +17,7 @@ npm init -y can be used to skip the setup step, npm takes care of it and creates
    Parcel/Webpack is type of a web application bundler used for development and productions purposes or power our application with different type functionalities and features.
 
 Parcel Features:
+Created own server.
 HMR (Hot Module Replacement) - parcel keeps track of file changes via file watcher algorithm and renders the changes in the files
 File watcher algorithm - made with C++
 Minification
@@ -47,7 +48,7 @@ npx parcel build <entry_point>
 3. What is .parcel-cache?
    .parcel-cache is used by parcel(bundler) to reduce the building time. It stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
 
-4. What is npx?
+4. What is npx (Node Package Execute) ?
    npx is a tool that is used to execute the packages. It comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
 
 5. What is difference between dependencies vs devDependencies
@@ -81,7 +82,7 @@ Webpack needs some configuration to be done for using HMR
    a. minification(remove indentation)
    b. image optimizations.
    c. compression(renaming variables)
-   d.cleaning our code
+   d.cleaning our code (remove console.log)
    e. super fast build
    f. dev and prod builds
    g. caching while development
@@ -177,3 +178,9 @@ import {sayHi} from './sayHi.js';
 
 alert(sayHi); // function...
 sayHi('John'); // Hello, John!
+
+18. What is code splitting?
+    It allows to split your application code into seperate bundles which can be loaded on demand, resulting in smaller initial bundle sizes and faster load times.
+
+19. What is bundlers?
+    a bundler is typically a tool that combines multiple JavaScript files and their dependencies into a single file (or a few files) to optimize performance and simplify deployment. This process is often referred to as "bundling."
